@@ -1,0 +1,49 @@
+Traceback (most recent call last):
+  File "C:\D\python\YouTube\NewsChannel\main.py", line 57, in <module>
+    main(cat, x)
+  File "C:\D\python\YouTube\NewsChannel\main.py", line 36, in main
+    text_on_image(news_data, image_name)
+  File "C:\D\python\YouTube\NewsChannel\image_manager.py", line 48, in text_on_image
+    content=split_string(news_data[3], "not")
+  File "C:\D\python\YouTube\NewsChannel\news_manager.py", line 40, in split_string
+    for x in range(1, len(text)):
+TypeError: object of type 'NoneType' has no len()
+
+
+
+
+Traceback (most recent call last):
+  File "C:\D\python\YouTube\NewsChannel\main.py", line 57, in <module>
+    main(cat, x)
+  File "C:\D\python\YouTube\NewsChannel\main.py", line 21, in main
+    download_image(image_name, news_data)
+  File "C:\D\python\YouTube\NewsChannel\image_manager.py", line 17, in download_image
+    r = requests.get(news_data[2], stream=True)
+  File "C:\Users\91798\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Users\91798\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\91798\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests\sessions.py", line 573, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\91798\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests\sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "C:\Users\91798\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\91798\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\requests\models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL 'None': No scheme supplied. Perhaps you meant http://None?
+
+
+
+Traceback (most recent call last):
+  File "C:\D\python\YouTube\NewsChannel\main.py", line 57, in <module>
+    main(cat, x)
+  File "C:\D\python\YouTube\NewsChannel\main.py", line 30, in main
+    image_size_changer(image_name)
+  File "C:\D\python\YouTube\NewsChannel\image_manager.py", line 39, in image_size_changer
+    sunset_resized = image.resize((1050, 790))
+  File "C:\Users\91798\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\PIL\Image.py", line 2043, in resize
+    self.load()
+  File "C:\Users\91798\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-packages\Python310\site-packages\PIL\ImageFile.py", line 251, in load
+    raise OSError(
+OSError: image file is truncated (7 bytes not processed)
